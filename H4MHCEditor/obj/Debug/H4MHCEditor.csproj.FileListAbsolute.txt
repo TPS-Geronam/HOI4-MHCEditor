@@ -1,0 +1,16 @@
+E:\VS Projects\H4MHCEditor\H4MHCEditor\bin\Debug\H4MHCEditor.exe.config
+E:\VS Projects\H4MHCEditor\H4MHCEditor\bin\Debug\H4MHCEditor.exe
+E:\VS Projects\H4MHCEditor\H4MHCEditor\bin\Debug\H4MHCEditor.pdb
+E:\VS Projects\H4MHCEditor\H4MHCEditor\obj\Debug\H4MHCEditor.csprojAssemblyReference.cache
+E:\VS Projects\H4MHCEditor\H4MHCEditor\obj\Debug\H4MHCEditor.mainForm.resources
+E:\VS Projects\H4MHCEditor\H4MHCEditor\obj\Debug\H4MHCEditor.Properties.Resources.resources
+E:\VS Projects\H4MHCEditor\H4MHCEditor\obj\Debug\H4MHCEditor.csproj.GenerateResource.cache
+E:\VS Projects\H4MHCEditor\H4MHCEditor\obj\Debug\H4MHCEditor.csproj.CoreCompileInputs.cache
+E:\VS Projects\H4MHCEditor\H4MHCEditor\obj\Debug\H4MHCEditor.exe
+E:\VS Projects\H4MHCEditor\H4MHCEditor\obj\Debug\H4MHCEditor.pdb
+E:\VS Projects\H4MHCEditor\H4MHCEditor\bin\Debug\res\_info.txt
+E:\VS Projects\H4MHCEditor\H4MHCEditor\bin\Debug\res\00_mhc_airforce_icons_TAG.txt
+E:\VS Projects\H4MHCEditor\H4MHCEditor\bin\Debug\res\00_mhc_army_icons_TAG.txt
+E:\VS Projects\H4MHCEditor\H4MHCEditor\bin\Debug\res\00_mhc_navy_icons_TAG.txt
+E:\VS Projects\H4MHCEditor\H4MHCEditor\bin\Debug\res\mhc_names_TAG_l_english.yml
+E:\VS Projects\H4MHCEditor\H4MHCEditor\bin\Debug\res\00_mhc_names_TAG.txt

@@ -1,0 +1,137 @@
+defined_text = {
+	name = GetMHCArmySecImageTAG
+	
+	text = {
+		trigger = {
+			has_variable = local_mhc_generic_army_advisors_array^0
+			is_in_array = {
+				array = local_mhc_generic_army_advisors_array
+				value = mhc_sec_value
+			}
+		}
+		localization_key = "[GetMHCArmySecImageGeneric]"
+	}
+	###Army Sec Replacement Marker###
+	
+	text = {
+		trigger = {
+			check_variable = { mhc_sec_value = 0 }
+		}
+		localization_key = "GFX_MHC_null"
+	}
+}
+
+defined_text = {
+	name = GetMHCArmyChiefImageTAG
+	
+	text = {
+		trigger = {
+			has_variable = local_mhc_generic_army_advisors_array^0
+			is_in_array = {
+				array = local_mhc_generic_army_advisors_array
+				value = mhc_chief_value
+			}
+		}
+		localization_key = "[GetMHCArmyChiefImageGeneric]"
+	}
+	###Army Chief Replacement Marker###
+	
+	text = {
+		trigger = {
+			check_variable = { mhc_chief_value = 0 }
+		}
+		localization_key = "GFX_MHC_null"
+	}
+}
+
+defined_text = {
+	name = GetMHCArmyVChiefImageTAG
+	
+	text = {
+		trigger = {
+			has_variable = local_mhc_generic_army_advisors_array^0
+			is_in_array = {
+				array = local_mhc_generic_army_advisors_array
+				value = mhc_vchief_value
+			}
+		}
+		localization_key = "[GetMHCArmyVChiefImageGeneric]"
+	}
+	###Army VChief Replacement Marker###
+	
+	text = {
+		trigger = {
+			check_variable = { mhc_vchief_value = 0 }
+		}
+		localization_key = "GFX_MHC_null"
+	}
+}
+
+defined_text = {
+	name = GetMHCArmyQuartImageTAG
+	
+	text = {
+		trigger = {
+			has_variable = local_mhc_generic_army_advisors_array^0
+			is_in_array = {
+				array = local_mhc_generic_army_advisors_array
+				value = mhc_quart_value
+			}
+		}
+		localization_key = "[GetMHCArmyQuartImageGeneric]"
+	}
+	###Army Quart Replacement Marker###
+	
+	text = {
+		trigger = {
+			check_variable = { mhc_quart_value = 0 }
+		}
+		localization_key = "GFX_MHC_null"
+	}
+}
+
+defined_text = {
+	name = GetMHCArmyPChiefImageTAG
+	
+	text = {
+		trigger = {
+			has_variable = local_mhc_generic_army_advisors_array^0
+			is_in_array = {
+				array = local_mhc_generic_army_advisors_array
+				value = mhc_pchief_value
+			}
+		}
+		localization_key = "[GetMHCArmyPChiefImageGeneric]"
+	}
+	###Army PChief Replacement Marker###
+	
+	text = {
+		trigger = {
+			check_variable = { mhc_pchief_value = 0 }
+		}
+		localization_key = "GFX_MHC_null"
+	}
+}
+
+defined_text = {
+	name = GetMHCArmyInsImageTAG
+	
+	text = {
+		trigger = {
+			has_variable = local_mhc_generic_army_advisors_array^0
+			is_in_array = {
+				array = local_mhc_generic_army_advisors_array
+				value = mhc_ins_value
+			}
+		}
+		localization_key = "[GetMHCArmyInsImageGeneric]"
+	}
+	###Army Ins Replacement Marker###
+	
+	text = {
+		trigger = {
+			check_variable = { mhc_ins_value = 0 }
+		}
+		localization_key = "GFX_MHC_null"
+	}
+}
