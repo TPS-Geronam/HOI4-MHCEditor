@@ -16,8 +16,8 @@ namespace H4MHCEditor {
         }
 
         private void advisorAddButton_Click(object sender, EventArgs e) {
-            if(!modDirectoryTextbox.Text.Contains("toi")) {
-                errorLabel.Text = "Please select a valid EoaNB directory.";
+            if(!modDirectoryTextbox.Text.EndsWith("\\toi")) {
+                errorLabel.Text = "Please select a valid EoaNB directory (has to end with \"\\toi\").";
             } else {
                 if (advisorNameTextbox.Text.Equals("")) {
                     errorLabel.Text = "Please enter a valid advisor name.";
@@ -94,8 +94,8 @@ namespace H4MHCEditor {
         }
 
         private void startupButton_Click(object sender, EventArgs e) {
-            if(!modDirectoryTextbox.Text.Contains("toi")) {
-                errorLabel.Text = "Please select a valid EoaNB directory.";
+            if(!modDirectoryTextbox.Text.EndsWith("\\toi")) {
+                errorLabel.Text = "Please select a valid EoaNB directory (has to end with \"\\toi\").";
             } else {
                 if(advisorNameTextbox.Text.Equals("")) {
                     errorLabel.Text = "Please enter a valid advisor name.";
