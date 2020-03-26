@@ -223,7 +223,7 @@ namespace H4MHCEditor {
             }
             string text = File.ReadAllText(namesFile);
 
-            text = text.Replace("TAG", "PRS");
+            text = text.Replace("TAG", countryTagTextbox.Text);
             if(type == 0) {
                 text = text.Replace("###Army Replacement Marker###", "text = {\n\t\ttrigger = {\n\t\t\tcheck_variable = { v = " + advisorMhcIdNumeric.Value + " }\n\t\t}\n\t\tlocalization_key = \"" + advisorLocKeyTextbox.Text + "\"\n\t}\n\t###Army Replacement Marker###");
             } else if(type == 1) {
