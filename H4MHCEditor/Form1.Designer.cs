@@ -266,6 +266,8 @@
             0,
             0,
             0});
+            this.startupTraitNumeric.Maximum = 500;
+            this.startupTraitNumeric.Minimum = 0;
             // 
             // startupButton
             // 

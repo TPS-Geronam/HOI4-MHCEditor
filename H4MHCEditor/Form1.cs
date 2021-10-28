@@ -234,6 +234,15 @@ namespace H4MHCEditor {
 
             File.WriteAllText(namesFile, text, Encoding.UTF8);
             logTextbox.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}]: Added names to 00_mhc_names_{countryTagTextbox.Text}.txt\n");
+        
+            string locFile = $"{modDirectoryTextbox.Text}\\localisation\\mhc_names_l_english.yml";
+            text = File.ReadAllText(locFile);
+            string toBeInserted = $" MHC_SELECTOR_ENTRY_NAME_ARMY_{countryTagTextbox.Text}:0 \"[MHC_SELECTOR_ENTRY_NAME_ARMY_{countryTagTextbox.Text}_PROXY]\"\n MHC_SELECTOR_ENTRY_NAME_AIRFORCE_{countryTagTextbox.Text}:0 \"[MHC_SELECTOR_ENTRY_NAME_AIRFORCE_{countryTagTextbox.Text}_PROXY]\"\n MHC_SELECTOR_ENTRY_NAME_NAVY_{countryTagTextbox.Text}:0 \"[MHC_SELECTOR_ENTRY_NAME_NAVY_{countryTagTextbox.Text}_PROXY]\"";
+            if(!text.Contains(toBeInserted)) {
+                text = text.Replace("###MHC Name Proxy Replacement Marker###", toBeInserted);
+                File.WriteAllText(locFile, text, Encoding.UTF8);
+                logTextbox.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}]: Added name proxy to mhc_names_l_english.yml\n");
+            }
         }
         #endregion
 
@@ -246,7 +255,7 @@ namespace H4MHCEditor {
                 text = text.Replace("###Army Replacement Marker###", $"###{countryTagTextbox.Text} START###\n\t###{countryTagTextbox.Text} Replacement Marker###\n\t###{countryTagTextbox.Text} END###\n\n\t###Army Replacement Marker###");
             }
 
-            text = text.Replace($"###{countryTagTextbox.Text} Replacement Marker###", "text = {\n\t\ttrigger = {\n\t\t\ttag = " + countryTagTextbox.Text + "\n\t\t\tNOT = { mhc_is_generic_navy_advisor_selector_trigger = yes }\n\t\t\tcheck_variable = { v = " + advisorMhcIdNumeric.Value + " }\n\t\t}\n\t\tlocalization_key = \"" + advisorGfxIdTextbox.Text + "\"\n\t}\n\t" + $"###{countryTagTextbox.Text} Replacement Marker###");
+            text = text.Replace($"###{countryTagTextbox.Text} Replacement Marker###", "text = {\n\t\ttrigger = {\n\t\t\ttag = " + countryTagTextbox.Text + "\n\t\t\tNOT = { mhc_is_generic_army_advisor_selector_trigger = yes }\n\t\t\tcheck_variable = { v = " + advisorMhcIdNumeric.Value + " }\n\t\t}\n\t\tlocalization_key = \"" + advisorGfxIdTextbox.Text + "\"\n\t}\n\t" + $"###{countryTagTextbox.Text} Replacement Marker###");
 
             File.WriteAllText(armyFile, text, Encoding.UTF8);
             logTextbox.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}]: Added army icons to 00_mhc_army_selector_icons.txt\n");
@@ -260,7 +269,7 @@ namespace H4MHCEditor {
                 text = text.Replace("###Airforce Replacement Marker###", $"###{countryTagTextbox.Text} START###\n\t###{countryTagTextbox.Text} Replacement Marker###\n\t###{countryTagTextbox.Text} END###\n\n\t###Airforce Replacement Marker###");
             }
 
-            text = text.Replace($"###{countryTagTextbox.Text} Replacement Marker###", "text = {\n\t\ttrigger = {\n\t\t\ttag = " + countryTagTextbox.Text + "\n\t\t\tNOT = { mhc_is_generic_navy_advisor_selector_trigger = yes }\n\t\t\tcheck_variable = { v = " + advisorMhcIdNumeric.Value + " }\n\t\t}\n\t\tlocalization_key = \"" + advisorGfxIdTextbox.Text + "\"\n\t}\n\t" + $"###{countryTagTextbox.Text} Replacement Marker###");
+            text = text.Replace($"###{countryTagTextbox.Text} Replacement Marker###", "text = {\n\t\ttrigger = {\n\t\t\ttag = " + countryTagTextbox.Text + "\n\t\t\tNOT = { mhc_is_generic_airforce_advisor_selector_trigger = yes }\n\t\t\tcheck_variable = { v = " + advisorMhcIdNumeric.Value + " }\n\t\t}\n\t\tlocalization_key = \"" + advisorGfxIdTextbox.Text + "\"\n\t}\n\t" + $"###{countryTagTextbox.Text} Replacement Marker###");
 
             File.WriteAllText(airforceFile, text, Encoding.UTF8);
             logTextbox.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}]: Added airforce icons to 00_mhc_army_selector_icons.txt\n");
